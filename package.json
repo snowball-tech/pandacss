@@ -10,7 +10,7 @@
     "@storybook/builder-vite": "^7.0.24",
     "@storybook/react": "^7.0.24",
     "@storybook/react-vite": "^7.0.24",
-    "@storybook/testing-library": "^0.0.14-next.2",
+    "@storybook/testing-library": "^0.2.0",
     "@types/lodash": "^4.14.195",
     "@types/prop-types": "^15.7.5",
     "@types/react": "^18.2.14",
@@ -18,14 +18,16 @@
     "@vitejs/plugin-react": "^4.0.1",
     "postcss": "^8.4.24",
     "prop-types": "^15.8.1",
+    "serve": "^14.2.0",
     "storybook": "^7.0.24",
     "typescript": "^5.1.6",
     "vite": "^4.3.9"
   },
   "scripts": {
-    "build-storybook": "storybook build",
+    "build:storybook": "storybook build",
+    "dev": "storybook dev -p 6006 --no-open",
     "prepare": "panda codegen",
-    "storybook": "storybook dev -p 6006"
+    "serve:storybook": "serve storybook-static"
   },
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",

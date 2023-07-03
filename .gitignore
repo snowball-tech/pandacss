@@ -10,6 +10,7 @@
 !.yarn/cache
 #.pnp.*
 
-node_modules/
+node_modules
 
 styled-system*
+storybook-static*
