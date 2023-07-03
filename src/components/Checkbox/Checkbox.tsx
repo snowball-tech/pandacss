@@ -1,15 +1,9 @@
 import { UilCheck as CheckIcon } from '@iconscout/react-unicons'
 import * as RxCheckbox from '@radix-ui/react-checkbox'
-import { css, cx } from '../../../styled-system/css'
-import {
-  checkboxIndicator,
-  checkboxLabel,
-  checkboxRoot,
-} from '../../../styled-system/recipes'
+import { css, cva, cx } from '../../../styled-system/css'
 import uniqueId from 'lodash/fp/uniqueId'
 import { useState } from 'react'
 
-import { DEFAULT_VARIANT } from './Checkbox.constants'
 import type { CheckboxProps } from './Checkbox.types'
 
 const checkboxContainer = css({
@@ -23,25 +17,114 @@ const checkboxContainer = css({
   pr: '16px',
 })
 
+const checkboxRoot = cva({
+  base: {
+    alignItems: 'center',
+    all: 'unset',
+    backgroundColor: 'white',
+    border: '2px solid black',
+    cursor: 'pointer',
+    display: 'flex',
+    height: '24px',
+    justifyContent: 'center',
+    width: '24px',
+  },
+
+  defaultVariants: {
+    variant: 'pink',
+  },
+
+  variants: {
+    variant: {
+      blue: {
+        '&:not(:is(:checked, [data-checked], [aria-checked=true]))': {
+          _groupHover: {
+            backgroundColor: 'blue',
+          },
+        },
+
+        _checked: {
+          backgroundColor: 'blue',
+        },
+      },
+      green: {
+        '&:not(:is(:checked, [data-checked], [aria-checked=true]))': {
+          _groupHover: {
+            backgroundColor: 'green',
+          },
+        },
+
+        _checked: {
+          backgroundColor: 'green',
+        },
+      },
+      pink: {
+        '&:not(:is(:checked, [data-checked], [aria-checked=true]))': {
+          _groupHover: {
+            backgroundColor: 'pink',
+          },
+        },
+
+        _checked: {
+          backgroundColor: 'pink',
+        },
+      },
+      purple: {
+        '&:not(:is(:checked, [data-checked], [aria-checked=true]))': {
+          _groupHover: {
+            backgroundColor: 'purple',
+          },
+        },
+
+        _checked: {
+          backgroundColor: 'purple',
+        },
+      },
+      white: {
+        '&:not(:is(:checked, [data-checked], [aria-checked=true]))': {
+          _groupHover: {
+            backgroundColor: 'white',
+          },
+        },
+
+        _checked: {
+          backgroundColor: 'white',
+        },
+      },
+      yellow: {
+        '&:not(:is(:checked, [data-checked], [aria-checked=true]))': {
+          _groupHover: {
+            backgroundColor: 'yellow',
+          },
+        },
+
+        _checked: {
+          backgroundColor: 'yellow',
+        },
+      },
+    },
+  },
+})
+
 /**
  * `Checkbox` component is used to allow a user to make a binary choice.
  */
 export default function Checkbox({
   id = uniqueId('fractal-checkbox-'),
   label,
-  variant = DEFAULT_VARIANT,
+  variant = 'pink',
 }: CheckboxProps) {
   const [htmlId] = useState(id)
 
   return (
     <div className={cx('group', checkboxContainer)}>
       <RxCheckbox.Root id={htmlId} className={checkboxRoot({ variant })}>
-        <RxCheckbox.Indicator className={checkboxIndicator({ variant })}>
+        <RxCheckbox.Indicator>
           <CheckIcon />
         </RxCheckbox.Indicator>
       </RxCheckbox.Root>
 
-      <label className={checkboxLabel({ variant })} htmlFor={htmlId}>
+      <label htmlFor={htmlId}>
         <p>{label}</p>
       </label>
     </div>
