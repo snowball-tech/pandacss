@@ -24,7 +24,7 @@
     "vite": "^4.3.9"
   },
   "scripts": {
-    "build": "panda codegen && storybook build",
+    "build": "NODE_ENV=production panda codegen && NODE_ENV=production storybook build",
     "dev": "panda codegen && storybook dev -p 6006 --no-open",
     "prepare": "panda codegen",
     "start": "serve storybook-static"
