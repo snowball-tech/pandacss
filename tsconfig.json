@@ -39,13 +39,7 @@
     "target": "ESNext",
     "useDefineForClassFields": true
   },
-  "include": ["./*.ts", "./*.tsx", "./.storybook/*.ts", "./.storybook/*.tsx"],
-  "exclude": [
-    "**/.yarn/plugins/**/*",
-    "**/.yarn/releases/**/*",
-    "**/build",
-    "**/dist",
-    "**/out"
-  ],
+  "include": ["**/*.ts", "**/*.tsx", "./.storybook/*.ts", "./.storybook/*.tsx"],
+  "exclude": ["**/.yarn/plugins/**/*", "**/.yarn/releases/**/*", "**/dist"],
   "references": []
 }

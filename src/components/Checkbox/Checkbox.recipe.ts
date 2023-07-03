@@ -39,7 +39,7 @@ export const checkboxRoot: ReturnType<typeof defineRecipe> = defineRecipe({
           _checked: {
             backgroundColor: variantName,
           },
-        } as SystemStyleObject,
+        },
       }),
       {} as Record<Variants, SystemStyleObject>,
     ),
@@ -62,7 +62,7 @@ export const checkboxIndicator: ReturnType<typeof defineRecipe> = defineRecipe({
     variant: Object.values(Variants).reduce(
       (variants, variantName) => ({
         ...variants,
-        [variantName]: {} as SystemStyleObject,
+        [variantName]: {},
       }),
       {} as Record<Variants, SystemStyleObject>,
     ),
@@ -94,7 +94,7 @@ export const checkboxLabel: ReturnType<typeof defineRecipe> = defineRecipe({
         ...variants,
         [variantName]: {
           color: variantName,
-        } as SystemStyleObject,
+        },
       }),
       {} as Record<Variants, SystemStyleObject>,
     ),

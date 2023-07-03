@@ -24,10 +24,10 @@
     "vite": "^4.3.9"
   },
   "scripts": {
-    "build:storybook": "storybook build",
-    "dev": "storybook dev -p 6006 --no-open",
+    "build": "panda codegen && storybook build",
+    "dev": "panda codegen && storybook dev -p 6006 --no-open",
     "prepare": "panda codegen",
-    "serve:storybook": "serve storybook-static"
+    "start": "serve storybook-static"
   },
   "dependencies": {
     "@iconscout/react-unicons": "^2.0.2",

@@ -23,7 +23,7 @@ export default defineConfig({
   optimize: process.env.NODE_ENV === 'production',
 
   // Where to look for your css declarations
-  include: ['./src/**/*.{js,jsx,ts,tsx}', './pages/**/*.{js,jsx,ts,tsx}'],
+  include: ['./src/**/*.{js,jsx,ts,tsx}'],
   exclude: [],
 
   theme: {
