@@ -1,10 +1,11 @@
 import { defineConfig } from '@pandacss/dev'
+import fractalPreset from '@snowball-tech/fractal/dist/fractal-panda.preset'
 
 export default defineConfig({
   // Don't use default theme from PandaCSS.
   eject: true,
   // Only import the base presets with useful resets and utilities.
-  presets: ['@pandacss/preset-base'],
+  presets: [fractalPreset],
 
   emitPackage: true,
   outdir: '@snowball-tech/fractal-panda',
@@ -22,5 +23,7 @@ export default defineConfig({
   ],
   exclude: [],
 
+  prefix: 'fractal',
+  jsxFactory: 'fractal',
   jsxFramework: 'react',
 })

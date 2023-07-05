@@ -1332,27 +1332,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@snowball-tech/design-tokens@npm:3.3.0, @snowball-tech/design-tokens@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "@snowball-tech/design-tokens@npm:3.3.0"
-  checksum: 7589510e98a3b1f96041030f446a9e9efc5417a7cf14bdf3307742f14a8c3458c336c70aa1158d6a0e316c093ee26254715e2731b637f9140b14e018a4730b06
+"@snowball-tech/design-tokens@npm:3.3.1, @snowball-tech/design-tokens@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "@snowball-tech/design-tokens@npm:3.3.1"
+  checksum: e41a734d1755cc95c16d11c813a8f2b083df4ef7b4cfbc4b1acdb0689865106dc7860d2e697892090b753fa4ed59501ca279785b95ec65156b64d797198ef64c
   languageName: node
   linkType: hard
 
-"@snowball-tech/fractal@npm:^1.2.3":
-  version: 1.2.3
-  resolution: "@snowball-tech/fractal@npm:1.2.3"
+"@snowball-tech/fractal@npm:^1.2.5":
+  version: 1.2.5
+  resolution: "@snowball-tech/fractal@npm:1.2.5"
   dependencies:
     "@iconscout/react-unicons": ^2.0.2
     "@radix-ui/react-checkbox": ^1.0.4
-    "@snowball-tech/design-tokens": 3.3.0
+    "@snowball-tech/design-tokens": 3.3.1
     lodash: ^4.17.21
     react: ^18.2.0
     react-dom: ^18.2.0
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: d13c0ec81983dc3bdf470919b2b2da46c1a89e16d7cd0efe6fc42e0d44011728c768f29acc2a7e9a4d03915be547dd1ce71dc67ffe3e6b1b7bc232fc9b556d63
+  checksum: 75f9e31e4be7829cebd3ce99f63f3ed4e7647e028d6f2832e124424bb6006e163d577186e84cb53fe925f7b5e24fc573492d56e0d6cc374c4b9de37630a2d167
   languageName: node
   linkType: hard
 
@@ -1361,8 +1361,8 @@ __metadata:
   resolution: "@snowball-tech/pandacss-repro@workspace:."
   dependencies:
     "@pandacss/dev": ^0.5.1
-    "@snowball-tech/design-tokens": ^3.3.0
-    "@snowball-tech/fractal": ^1.2.3
+    "@snowball-tech/design-tokens": ^3.3.1
+    "@snowball-tech/fractal": ^1.2.5
     "@types/lodash": ^4.14.195
     "@types/node": ^20.3.3
     "@types/prop-types": ^15.7.5

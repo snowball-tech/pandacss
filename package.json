@@ -28,8 +28,8 @@
     "types:check": "yarn run pretypes:check && tsc --noEmit"
   },
   "dependencies": {
-    "@snowball-tech/design-tokens": "^3.3.0",
-    "@snowball-tech/fractal": "^1.2.3",
+    "@snowball-tech/design-tokens": "^3.3.1",
+    "@snowball-tech/fractal": "^1.2.5",
     "lodash": "^4.17.21",
     "next": "^13.4.8",
     "react": "^18.2.0",

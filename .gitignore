@@ -42,9 +42,6 @@ next-env.d.ts
 **/.env*.local
 *.pem
 
-# Vercel
-**/.vercel
-
 # IDE
 **/.idea
 **/*.ntvs*
@@ -61,11 +58,21 @@ next-env.d.ts
 # Files from the VSCode "SQLTools" extensions.
 **/*.session.sql
 
+# Pythagora project (https://pythagora.ai/).
+.pythagora
+
 # Storybook.
-**/storybook-static
+**/storybook-static*
+
+# Vercel.
+**/.vercel
+
+# Supabase.
+**/supabase/.branches
+**/supabase/.temp
 
 # Misc.
 *.bak
 
-# PandaCSS
+# PandaCSS.
 styled-system*
