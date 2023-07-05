@@ -1339,9 +1339,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@snowball-tech/fractal@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "@snowball-tech/fractal@npm:1.2.2"
+"@snowball-tech/fractal@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "@snowball-tech/fractal@npm:1.2.3"
   dependencies:
     "@iconscout/react-unicons": ^2.0.2
     "@radix-ui/react-checkbox": ^1.0.4
@@ -1352,7 +1352,7 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: ae481f64d471346ed87633b1ca22b2dccbdd92c72523ddf507214c5496d92e720ff7f475b09ce66b376522ea13cb8c7b91af91ed909f40d8e01185d24325aec4
+  checksum: d13c0ec81983dc3bdf470919b2b2da46c1a89e16d7cd0efe6fc42e0d44011728c768f29acc2a7e9a4d03915be547dd1ce71dc67ffe3e6b1b7bc232fc9b556d63
   languageName: node
   linkType: hard
 
@@ -1362,7 +1362,7 @@ __metadata:
   dependencies:
     "@pandacss/dev": ^0.5.1
     "@snowball-tech/design-tokens": ^3.3.0
-    "@snowball-tech/fractal": ^1.2.2
+    "@snowball-tech/fractal": ^1.2.3
     "@types/lodash": ^4.14.195
     "@types/node": ^20.3.3
     "@types/prop-types": ^15.7.5
