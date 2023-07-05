@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@snowball-tech/design-tokens": "^3.3.0",
-    "@snowball-tech/fractal": "^1.2.1",
+    "@snowball-tech/fractal": "^1.2.2",
     "lodash": "^4.17.21",
     "next": "^13.4.8",
     "react": "^18.2.0",
@@ -39,7 +39,7 @@
     "@pandacss/dev": "^0.5.1",
     "@types/lodash": "^4.14.195",
     "@types/node": "^20.3.3",
-    "@types/prop-types": "^15",
+    "@types/prop-types": "^15.7.5",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "concurrently": "^8.2.0",
