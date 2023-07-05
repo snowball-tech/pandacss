@@ -3,4 +3,5 @@
 /* stylelint-disable import-notation */
 @import '@snowball-tech/design-tokens/dist/web/css/fonts.css';
 @import '@snowball-tech/design-tokens/dist/web/css/variables.css';
+@import '@snowball-tech/fractal/dist/fractal.css';
 /* stylelint-enable import-notation */

@@ -17,10 +17,7 @@ export default defineConfig({
   minify: process.env.NODE_ENV === 'production',
 
   // Where to look for your css declarations
-  include: [
-    './node_modules/@snowball-tech/fractal/dist/fractal.buildinfo.json',
-    './src/**/*.{js,jsx,ts,tsx}',
-  ],
+  include: ['./src/**/*.{js,jsx,ts,tsx}'],
   exclude: [],
 
   prefix: 'fractal',
