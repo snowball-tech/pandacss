@@ -1,1 +1,6 @@
 @layer reset, base, tokens, recipes, utilities;
+
+/* stylelint-disable import-notation */
+@import '@snowball-tech/design-tokens/dist/web/css/fonts.css';
+@import '@snowball-tech/design-tokens/dist/web/css/variables.css';
+/* stylelint-enable import-notation */
